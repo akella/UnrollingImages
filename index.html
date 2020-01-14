@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Scroll Effects | Demo 1 | Codrops</title>
+	<meta name="description" content="A set of creative WebGL-powered image transitions" />
+	<meta name="keywords" content="webgl, image transition, distortion, warp, effect, web design" />
+	<meta name="author" content="Codrops" />
+	<link rel="stylesheet" href="https://use.typekit.net/jsq0suq.css"> 
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this in a modern browser that supports CSS Variables.");
+	</script>
+	<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+</head>
+
+<body class="demo-1 cda-removeleft cda-naked cda-noimg loading">
+	<main>
+		<!-- begin scrollable -->
+		<div data-scroll>
+			
+
+			<!-- begin section -->
+			<div class="section intro">
+				<div class="intro__wrap">
+					<div class="intro__background-image">
+						<img src="img/intro1.jpg" alt="">
+						<div class="intro__title">Mechanism</div>
+					</div>
+					
+					<div class="intro__foreground-image">
+						<img src="img/intro2.jpg" class="js-image" alt="">
+					</div>
+				</div>
+
+			</div>
+			<!-- end section -->
+
+			<!-- begin section -->
+			<div class="section dos">
+				<div class="dos__foreground">
+					<div class="meta">
+						<h3 class="meta__subtitle">– mechanism</h3>
+						<h2 class="meta__title">Soma Five</h2>
+					</div>
+					<div class="dos__foreground-image">
+						<img src="img/dos1.jpg" alt="">
+					</div>
+				</div>
+				<div class="dos__background">
+					<div class="counter"><strong>01</strong>/04</div>
+					<div class="dos__background-image">
+						<img src="img/dos2.jpg"  class="js-image"  alt="">
+					</div>
+					<div class="dos__text">
+						<p>Aenean fermentum turpis et justo malesuada eleifend. Maecenas ex urna, maximus sit amet faucibus non, porta id enim. Nullam lobortis lorem pharetra porttitor porttitor. Mauris placerat faucibus sapien, eu suscipit magna feugiat.</p>
+					</div>
+					
+				</div>
+				
+			</div>
+			<!-- end section -->
+
+
+			<!-- begin tres -->
+			<div class="section tres">
+				<div class="tres__foreground">
+					<div class="tres__foreground-image">
+						<img src="img/tres1.jpg" class="js-image" alt="">
+					</div>
+					<div class="meta">
+						<h3 class="meta__subtitle">– mechanism</h3>
+						<h2 class="meta__title">Neon Plex</h2>
+					</div>
+				</div>
+
+				<div class="tres__background">
+					<div class="counter"><strong>01</strong>/04</div>
+					<div class="tres__background-image">
+						<img src="img/tres2.jpg" alt="">
+					</div>
+					<div class="tres__text">
+						<p>Aenean fermentum turpis et justo malesuada eleifend. Maecenas ex urna, maximus sit amet faucibus non, porta id enim. Nullam lobortis lorem pharetra porttitor porttitor. Mauris placerat faucibus sapien, eu suscipit magna feugiat.</p>
+					</div>
+				</div>
+			</div>
+			<!-- end tres -->
+
+
+
+
+			<!-- begin section cuatro -->
+			<div class="section cuatro">
+				<ul>
+					<li><img src="img/1.jpg" class="js-image" alt=""></li>
+					<li><img src="img/2.jpg" class="js-image" alt=""></li>
+					<li><img src="img/3.jpg" class="js-image" alt=""></li>
+					<li><img src="img/4.jpg" class="js-image" alt=""></li>
+				</ul>
+			</div>
+			<!-- end section -->
+
+
+
+			<!-- begin section -->
+			<div class="section last">
+				<div class="buttons">
+					<button class="button js-change" data-angle="90">Vertical folds</button>
+					<button class="button js-change" data-angle="17">Angled folds</button>
+					<button class="button js-change" data-angle="0">Horizontal folds</button>
+				</div>
+				<div class="last__image">
+					<img src="img/last.jpg" class="js-image" alt="">
+				</div>
+			</div>
+			<!-- end section -->
+	
+		</div>
+		<!-- end scrollable -->
+
+
+		
+
+	</main>
+	<div id="container"></div>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
