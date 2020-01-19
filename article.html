@@ -47,9 +47,12 @@ MY_SCENE.add(
 <h1>Roll</h1>
 <p>So, we have it in 3D! Now with power of shaders we can do anything!<br>
 Well, anything <em>we</em> are capable of, at least =).</p>
-
-[!!!plane in 3D with many vertices - wireframe, scroll video] 
-
+<figure>
+	<video src="assets/wireframe.mp4" muted autoplay loop width="600"></video>
+	<figcaption>
+		Red parts are WebGL, everything else HTML.
+	</figcaption>
+</figure>
 <p>I started from the end. I imagine every animation i do, as some function which takes number between 0 and 1 (i call it `progress`), and returns visual. So result of my imaginary RollFunction(0), should be something rolled. And RollFunction(1), should be just the default position of the plane.
 That’s how i got the last line of my animation:</p>
 <pre class="brush:glsl">
@@ -83,8 +86,15 @@ newposition.x =  RADIUS*cos(position.x*TWO_PI);
 </pre>
 
 <p>And you will get something like that:</p>
-[!!!show 2d profile of rolled something] [d3 animation URL and video]
-
+<figure>
+<iframe height="234" style="width: 100%;" scrolling="no" title="Archimedean spiral unroll animation" src="https://codepen.io/claimred/embed/JNZPPJ?height=234&theme-id=default&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/claimred/pen/JNZPPJ'>Archimedean spiral unroll animation</a> by Ted
+  (<a href='https://codepen.io/claimred'>@claimred</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+	<figcaption>
+		It is done with the help of D3 library, but idea is the same.
+	</figcaption>
+</figure>
 <p>This two-dimensional animation has really helped me to get the idea of rolling things. So i recommend you to dig into the code, its quite interesting!</p>
 
 <p>After that step, it was a matter of time and arithmetics to play a bit with progress, so i have this kind of animation for my plane:</p>

@@ -17,6 +17,9 @@ export default class Sketch {
     this.renderer.setSize(this.width, this.height);
     this.renderer.sortObjects = false;
 
+    this.renderer.gammaOutput = true;
+    this.renderer.gammaFactor = 2.2;
+
     this.container = document.getElementById("container");
     this.container.appendChild(this.renderer.domElement);
 
@@ -91,7 +94,7 @@ export default class Sketch {
           value: new THREE.Vector2(1, 1)
         }
       },
-      // wireframe: true,
+      wireframe: true,
       transparent: true,
       vertexShader: vertex,
       fragmentShader: fragment

@@ -21,4 +21,6 @@ void main()	{
         gl_FragColor +=vec4(vBackShadow/2.);
 	}
     gl_FragColor.a = clamp(progress*5.,0.,1.);
+
+    // gl_FragColor = vec4(1.,0.,0.,1.);
 }
