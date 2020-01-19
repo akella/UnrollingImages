@@ -94,7 +94,7 @@ export default class Sketch {
           value: new THREE.Vector2(1, 1)
         }
       },
-      wireframe: true,
+      // wireframe: true,
       transparent: true,
       vertexShader: vertex,
       fragmentShader: fragment
