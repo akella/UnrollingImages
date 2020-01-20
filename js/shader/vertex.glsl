@@ -5,6 +5,7 @@ uniform vec4 resolution;
 varying vec2 vUv;
 varying float vFrontShadow;
 varying float vBackShadow;
+varying float vProgress;
 
 uniform sampler2D texture1;
 uniform sampler2D texture2;
@@ -53,6 +54,7 @@ void main() {
   // shadows
   vFrontShadow = clamp(abs((progress - offs*0.95)/0.05),0.8,1.);
   vBackShadow = 1. - clamp(abs((progress - offs*0.9)/0.1),0.,1.);
+  vProgress = tProgress;
 
   
 
