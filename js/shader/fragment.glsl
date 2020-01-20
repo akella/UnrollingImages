@@ -6,8 +6,8 @@ uniform vec4 resolution;
 
 varying vec2 vUv;
 varying float vFrontShadow;
-varying float vBackShadow;
-varying float vProgress;
+// varying float vBackShadow;
+// varying float vProgress;
 
 
 
@@ -17,11 +17,6 @@ void main()	{
 
 	gl_FragColor = texture2D(texture1,newUV);
     gl_FragColor.rgb *=vFrontShadow;
-
-	if(vProgress<0.39){
-		gl_FragColor =gl_FragColor/2. + vec4(0.,0.,0.,0.5);
-		gl_FragColor +=vec4(vBackShadow/2.);
-	}
     gl_FragColor.a = clamp(progress*5.,0.,1.);
 
 }
