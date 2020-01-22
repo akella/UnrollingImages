@@ -1,6 +1,6 @@
 # Image Unroll Effects with Three.js
 
-Some urolling image effects using WebGL. By Yuriy Artyukh
+Some unrolling image effects using WebGL. By Yuriy Artyukh
 
 ![Image Title](https://tympanus.net/codrops/wp-content/uploads/2020/01/Unrolling_featured-1.jpg)
 
