@@ -138,7 +138,7 @@ class Item {
       this.isBeingAnimatedNow = true;
       this.shouldUnRoll = false;
       gsap.to(this.mesh.material.uniforms.progress, {
-        duration: 2,
+        duration: 1.7,
         value: 1,
         ease: "power2.out",
         onUpdate: () => {
@@ -155,9 +155,9 @@ class Item {
       this.isBeingAnimatedNow = true;
       this.shouldRollBack = false;
       gsap.to(this.mesh.material.uniforms.progress, {
-        duration: 2,
+        duration: 1.7,
         value: 0,
-        ease: "power2.out",
+        ease: "power2.inOut",
         onUpdate: () => {
           this.scroll.shouldRender = true;
         },

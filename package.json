@@ -3,8 +3,8 @@
     "dat.gui": "^0.7.6",
     "ev-emitter": "^1.1.1",
     "fontfaceobserver": "^2.1.0",
-    "gsap": "^3.0.4",
-    "three": "^0.112.0",
+    "gsap": "^3.0.5",
+    "three": "^0.112.1",
     "three-orbit-controls": "^82.1.0"
   },
   "devDependencies": {

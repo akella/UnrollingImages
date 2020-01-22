@@ -4,128 +4,110 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Image Scroll Effects | Demo 1 | Codrops</title>
-	<meta name="description" content="A set of creative WebGL-powered image transitions" />
-	<meta name="keywords" content="webgl, image transition, distortion, warp, effect, web design" />
+	<title>Image Unroll Effects with Three.js | Codrops</title>
+	<meta name="description" content="Demo for various image unrolling effects with Three.js-" />
+	<meta name="keywords" content="three.js, webgl, unroll, image, effect, rollout, website, web development" />
 	<meta name="author" content="Codrops" />
-	<link rel="stylesheet" href="https://use.typekit.net/jsq0suq.css"> 
+	<link rel="stylesheet" href="https://use.typekit.net/jsq0suq.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
-	<link rel="stylesheet" type="text/css" href="css/custom.css" />
 	<script>
 	document.documentElement.className = "js";
 	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
 	supportsCssVars() || alert("Please view this in a modern browser that supports CSS Variables.");
 	</script>
-	<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
 </head>
 
-<body class="demo-1 cda-removeleft cda-naked cda-noimg loading">
+<body class="loading">
 	<main>
 		<!-- begin scrollable -->
 		<div data-scroll>
-			
-
+			<header class="header">
+				<h1 class="header__title">Image Unroll Effects with Three.js</h1>
+				<div class="info">
+					<a class="info__link" href="https://tympanus.net/codrops/?p=46712">Article</a>
+					<a class="info__link" href="https://tympanus.net/Tutorials/FoldingDOM/">Previous demo</a>
+					<a class="info__link" href="https://github.com/akella/UnrollingImages">GitHub</a>
+				</div>
+			</header>
 			<!-- begin section -->
-			<div class="section intro">
+			<section class="section intro">
 				<div class="intro__wrap">
 					<div class="intro__background-image">
-						<img src="img/intro1.jpg" alt="">
-						<div class="intro__title">Mechanism</div>
+						<img src="img/intro1.jpg" alt="Some image">
+						<div class="intro__title">Watson Building, Dubai, 2020</div>
 					</div>
-					
 					<div class="intro__foreground-image">
-						<img src="img/intro2.jpg" class="js-image" alt="">
+						<img src="img/intro2.jpg" class="js-image" alt="Some image">
 					</div>
 				</div>
-
-			</div>
+			</section>
 			<!-- end section -->
-
 			<!-- begin section -->
-			<div class="section dos">
+			<section class="section dos">
 				<div class="dos__foreground">
 					<div class="meta">
-						<h3 class="meta__subtitle">– mechanism</h3>
-						<h2 class="meta__title">Soma Five</h2>
+						<h3 class="meta__subtitle">– architecture</h3>
+						<h2 class="meta__title">Megalith</h2>
 					</div>
 					<div class="dos__foreground-image">
-						<img src="img/dos1.jpg" alt="">
+						<img src="img/dos1.jpg" alt="Some image">
 					</div>
 				</div>
 				<div class="dos__background">
-					<div class="counter"><strong>01</strong>/04</div>
 					<div class="dos__background-image">
-						<img src="img/dos2.jpg"  class="js-image"  alt="">
+						<img src="img/dos2.jpg" class="js-image" alt="Some image">
 					</div>
 					<div class="dos__text">
-						<p>Aenean fermentum turpis et justo malesuada eleifend. Maecenas ex urna, maximus sit amet faucibus non, porta id enim. Nullam lobortis lorem pharetra porttitor porttitor. Mauris placerat faucibus sapien, eu suscipit magna feugiat.</p>
+						<p>Carlon Arc, Chicago, 2019</p>
 					</div>
-					
 				</div>
-				
-			</div>
+			</section>
 			<!-- end section -->
-
-
 			<!-- begin tres -->
-			<div class="section tres">
+			<section class="section tres">
 				<div class="tres__foreground">
 					<div class="tres__foreground-image">
-						<img src="img/tres1.jpg" class="js-image" alt="">
+						<img src="img/tres1.jpg" class="js-image" alt="Some image">
 					</div>
 					<div class="meta">
-						<h3 class="meta__subtitle">– mechanism</h3>
+						<h3 class="meta__subtitle">– innovator</h3>
 						<h2 class="meta__title">Neon Plex</h2>
 					</div>
 				</div>
-
 				<div class="tres__background">
-					<div class="counter"><strong>01</strong>/04</div>
 					<div class="tres__background-image">
-						<img src="img/tres2.jpg" alt="">
+						<img src="img/tres2.jpg" alt="Some image">
 					</div>
 					<div class="tres__text">
-						<p>Aenean fermentum turpis et justo malesuada eleifend. Maecenas ex urna, maximus sit amet faucibus non, porta id enim. Nullam lobortis lorem pharetra porttitor porttitor. Mauris placerat faucibus sapien, eu suscipit magna feugiat.</p>
+						<p>Plex Construct, Sydney, 2018</p>
 					</div>
 				</div>
-			</div>
+			</section>
 			<!-- end tres -->
-
-
-
-
 			<!-- begin section cuatro -->
-			<div class="section cuatro">
+			<section class="section cuatro">
 				<ul>
-					<li><img src="img/1.jpg" class="js-image" alt=""></li>
-					<li><img src="img/2.jpg" class="js-image" alt=""></li>
-					<li><img src="img/3.jpg" class="js-image" alt=""></li>
-					<li><img src="img/4.jpg" class="js-image" alt=""></li>
+					<li><img src="img/1.jpg" class="js-image" alt="Some image"></li>
+					<li><img src="img/2.jpg" class="js-image" alt="Some image"></li>
+					<li><img src="img/3.jpg" class="js-image" alt="Some image"></li>
+					<li><img src="img/4.jpg" class="js-image" alt="Some image"></li>
 				</ul>
-			</div>
+			</section>
 			<!-- end section -->
-
-
-
 			<!-- begin section -->
-			<div class="section last">
+			<section class="section last">
 				<div class="buttons">
-					<button class="button js-change" data-angle="90">Vertical folds</button>
-					<button class="button js-change" data-angle="17">Angled folds</button>
-					<button class="button js-change" data-angle="0">Horizontal folds</button>
+					<button class="button js-change" data-angle="90">Vertical</button>
+					<button class="button js-change" data-angle="17">Angled</button>
+					<button class="button js-change" data-angle="0">Horizontal</button>
 				</div>
 				<div class="last__image">
-					<img src="img/last.jpg" class="js-image" alt="">
+					<img src="img/last.jpg" class="js-image" alt="Some image">
 				</div>
 			</div>
 			<!-- end section -->
-	
-		</div>
+		</section>
 		<!-- end scrollable -->
-
-
-		
-
 	</main>
 	<div id="container"></div>
 	<script src="js/app.js"></script>
