@@ -8,6 +8,10 @@ Some unrolling image effects using WebGL. By Yuriy Artyukh
 
 [Demo](https://tympanus.net/Development/UnrollingImages/)
 
+## Instructions
+
+Run `parcel index.html` if you have [Parcel](https://parceljs.org/) installed, otherwise `npx parcel index.html`
+
 ## Credits
 
 - [three.js](https://threejs.org/)
