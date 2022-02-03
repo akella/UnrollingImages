@@ -3,7 +3,7 @@
     "dat.gui": "^0.7.6",
     "ev-emitter": "^1.1.1",
     "fontfaceobserver": "^2.1.0",
-    "gsap": "^3.0.5",
+    "gsap": "^3.6.0",
     "three": "^0.112.1",
     "three-orbit-controls": "^82.1.0"
   },
